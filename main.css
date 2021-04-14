@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+/*elemento base*/
+body{
+    background-color: #141414;
+    font-family: 'Georgia','Times';
+    color: rgb(250, 238, 223);  
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family : 'Georgia', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    text-shadow: #202022;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+header nav i{
+    text-decoration: none;
+    text-shadow: #202022;
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 12px;
+
+}
+
+header nav i :hover{
+    color: #fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%);
+    background-image:url("./img/comAVG.jpg");
+
+    height: 400px ;
+    background-size:cover;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.075),rgba(0, 0, 0, 0)100%);
+    display: inline-flex;
+    width: 100%;
+    
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: #202022;
+}
+
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 2s ease all;
+}
+
+.botao:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+   width:70%; 
+}
+
+/*Catálogo de filmes*/
+
+.box-filmes{
+    height: 100%;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+
